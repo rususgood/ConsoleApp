@@ -1,17 +1,36 @@
-﻿namespace ConsoleApp
+﻿internal class Program
 {
-    internal class Program
+    static void Main(string[] args)
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("А почему в ресторане ей никогда не нравится то,");
-            Console.WriteLine("что заказала она, и всегда нравится то что заказал я?");
-            Console.WriteLine();
-            Console.WriteLine("И она начинает есть у меня из тарелки. Я ей говорю:");
-            Console.WriteLine("«Закажи себе то же самое». Она говорит: «Зачем?");
-            Console.WriteLine("Я только попробовать»  И съедает половину.");
-            Console.WriteLine();
-            Console.WriteLine("// к.ф. \"О чём говорят, мужчины\" //");
-        }
+        // Обложка
+        Console.WriteLine("╔══════════════════════════════╗");
+        Console.WriteLine("║         📝 МОЯ АНКЕТА        ║");
+        Console.WriteLine("╚══════════════════════════════╝");
+        Console.WriteLine();
+
+        // Ввод данных
+        Console.Write("Имя: ");
+        string name = Console.ReadLine();
+
+        Console.Write("Фамилия: ");
+        string surname = Console.ReadLine();
+
+        Console.Write("Год рождения: ");
+        string year = Console.ReadLine();
+
+        // Построение рамки
+        Console.WriteLine("╔══════════════════════════════╗");
+        Console.WriteLine("║         📋 ВАША АНКЕТА       ║");
+        Console.WriteLine("╠══════════════════════════════╣");
+
+        // Формат: "║ Название поля : значение      ║"
+        Console.WriteLine($"║ Имя           : {name.PadRight(18)} ║");
+        Console.WriteLine($"║ Фамилия       : {surname.PadRight(18)} ║");
+        Console.WriteLine($"║ Год рождения  : {year.PadRight(18)} ║");
+
+        Console.WriteLine("╚══════════════════════════════╝");
+
+        Console.WriteLine("\nНажмите любую клавишу...");
+        Console.ReadKey();
     }
 }
