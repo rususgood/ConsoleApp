@@ -16,7 +16,13 @@
         string surname = Console.ReadLine();
 
         Console.Write("Год рождения: ");
-        string year = Console.ReadLine();
+        int year = int.Parse(Console.ReadLine());
+
+        Console.Write("Средний балл: ");
+        double grade = double.Parse(Console.ReadLine());
+
+        Console.Write("Пол (М/Ж): ");
+        char gender = char.Parse(Console.ReadLine());
 
         // Построение рамки
         Console.WriteLine("╔══════════════════════════════╗");
@@ -26,11 +32,15 @@
         // Формат: "║ Название поля : значение      ║"
         Console.WriteLine($"║ Имя           : {name.PadRight(18)} ║");
         Console.WriteLine($"║ Фамилия       : {surname.PadRight(18)} ║");
-        Console.WriteLine($"║ Год рождения  : {year.PadRight(18)} ║");
+        Console.WriteLine($"║ Год рождения  : {year.ToString().PadRight(18)} ║");
+        Console.WriteLine($"║ Средний балл  : {grade.ToString().PadRight(18)} ║");
+        Console.WriteLine($"║ Пол           : {gender.ToString().PadRight(18)} ║");
 
         Console.WriteLine("╚══════════════════════════════╝");
 
         Console.WriteLine("\nНажмите любую клавишу...");
         Console.ReadKey();
+
+
     }
 }
