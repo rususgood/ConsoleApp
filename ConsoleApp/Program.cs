@@ -1,17 +1,31 @@
-﻿namespace ConsoleApp
+﻿using System;
+
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("А почему в ресторане ей никогда не нравится то,");
-            Console.WriteLine("что заказала она, и всегда нравится то что заказал я?");
-            Console.WriteLine();
-            Console.WriteLine("И она начинает есть у меня из тарелки. Я ей говорю:");
-            Console.WriteLine("«Закажи себе то же самое». Она говорит: «Зачем?");
-            Console.WriteLine("Я только попробовать»  И съедает половину.");
-            Console.WriteLine();
-            Console.WriteLine("// к.ф. \"О чём говорят, мужчины\" //");
-        }
+
+        Console.Write("Введите название команды: ");
+        string team = Console.ReadLine();
+
+        Console.Write("Введите игровой никнейм: ");
+        string nickname = Console.ReadLine();
+
+        Console.Write("Введите уровень персонажа (число): ");
+        int level = int.Parse(Console.ReadLine());
+
+        Console.Write("Введите пол участника (м/ж): ");
+        char gender = char.Parse(Console.ReadLine());
+
+        Console.Write("Введите ставку за матч (грн): ");
+        decimal bet = decimal.Parse(Console.ReadLine());
+
+        Console.WriteLine("\n===== АНКЕТА УЧАСТНИКА =====");
+        Console.WriteLine("Название команды: " + team);
+        Console.WriteLine("Игровой никнейм: " + nickname);
+        Console.WriteLine("Уровень персонажа: " + level);
+        Console.WriteLine("Пол участника: " + gender);
+        Console.WriteLine("Ставка за матч: " + bet + " ₴");
+        Console.WriteLine("============================");
     }
 }
