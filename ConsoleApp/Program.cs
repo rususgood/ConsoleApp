@@ -1,17 +1,9 @@
-﻿namespace ConsoleApp
+﻿using System;
+
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("А почему в ресторане ей никогда не нравится то,");
-            Console.WriteLine("что заказала она, и всегда нравится то что заказал я?");
-            Console.WriteLine();
-            Console.WriteLine("И она начинает есть у меня из тарелки. Я ей говорю:");
-            Console.WriteLine("«Закажи себе то же самое». Она говорит: «Зачем?");
-            Console.WriteLine("Я только попробовать»  И съедает половину.");
-            Console.WriteLine();
-            Console.WriteLine("// к.ф. \"О чём говорят, мужчины\" //");
-        }
+        Console.WriteLine("Результат: " + (((0.25 - 0.12) * 0.81 + 0.132 - 2.7 / 3.1) / (3.0 / 7.0 + 2.97 * (8.05 - 8.1 * 6.07))));
     }
 }
