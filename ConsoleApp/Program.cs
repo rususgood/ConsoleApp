@@ -1,17 +1,63 @@
-﻿namespace ConsoleApp
+﻿using System;
+
+class Program
 {
-    internal class Program
+    static void Main()
     {
-        static void Main(string[] args)
-        {
-            Console.WriteLine("А почему в ресторане ей никогда не нравится то,");
-            Console.WriteLine("что заказала она, и всегда нравится то что заказал я?");
-            Console.WriteLine();
-            Console.WriteLine("И она начинает есть у меня из тарелки. Я ей говорю:");
-            Console.WriteLine("«Закажи себе то же самое». Она говорит: «Зачем?");
-            Console.WriteLine("Я только попробовать»  И съедает половину.");
-            Console.WriteLine();
-            Console.WriteLine("// к.ф. \"О чём говорят, мужчины\" //");
-        }
+        // задание 1 
+        //Console.Write("Введите номер пальца (1–5): ");
+        //int number = int.Parse(Console.ReadLine());
+
+        //string finger;
+
+        //if (number == 1)
+        //{
+        //    finger = "Большой палец";
+        //}
+        //else if (number == 2)
+        //{
+        //    finger = "Указательный палец";
+        //}
+        //else if (number == 3)
+        //{
+        //    finger = "Средний палец";
+        //}
+        //else if (number == 4)
+        //{
+        //    finger = "Безымянный палец";
+        //}
+        //else if (number == 5)
+        //{
+        //    finger = "Мизинец";
+        //}
+        //else
+        //{
+        //    finger = "Неверный номер. Введите число от 1 до 5.";
+        //}
+
+        //Console.WriteLine(finger);
+
+        // Задание 2 
+
+        //Console.Write("Введите первое однозначное число: ");
+        //int a = int.Parse(Console.ReadLine());
+
+        //Console.Write("Введите второе однозначное число: ");
+        //int b = int.Parse(Console.ReadLine());
+
+        //int correct = a * b;
+
+        //Console.Write($"Сколько будет {a} * {b}? ");
+        //int userаnswer = int.Parse(Console.ReadLine());
+
+        //if (userаnswer == correct)
+        //{
+        //    Console.WriteLine("Правильно!");
+        //}
+        //else
+        //{
+        //    Console.WriteLine("Неправильно.");
+        //    Console.WriteLine("Правильный ответ: " + correct);
     }
 }
+
